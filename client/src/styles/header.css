@@ -42,7 +42,7 @@
   position: fixed;
   top: 65px;
   right: 0;
-  width: 50%;
+  width: 100%;
   height: calc(100% - var(--header-height));
   background: rgba(0, 0, 0, 0.95);
   z-index: 1050;
@@ -71,25 +71,28 @@
   text-decoration: none;
   color: var(--light-text);
   transition: border-bottom 0.2s ease;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   font-size: 1.5rem;
 }
 
 .nav-link:hover {
   color: var(--light-text);
-  border-bottom: 2px solid var(--active-link);
+  border-bottom: 3px solid var(--active-link);
 }
 
 /* Desktop Overrides */
 @media screen and (min-width: 768px) {
+  .site-header {
+    padding: 1rem;
+  }
   /* Hide mobile overlay on desktop */
   .nav-menu.overlay {
-      display: none;
+    display: none;
   }
   
   /* Display inline navigation menu */
   .nav-menu {
-      display: block;
+    display: block;
   }
   
   /* Navigation list for desktop */
@@ -105,12 +108,11 @@
   .nav-link {
     font-size: 1rem;
     color: var(--dark-text);
-    padding-bottom: 0.25rem;
   }
   
   .nav-link:hover,
   .nav-link.active {
     color: var(--dark-text);
-    border-bottom: 2px solid var(--active-link);
+    border-bottom: 3px solid var(--active-link);
   }
 }

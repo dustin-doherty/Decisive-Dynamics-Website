@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Navigation, NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/footer.css'
@@ -10,12 +10,18 @@ interface NavLinkItem {
 }
 
 const navLinks: NavLinkItem[] = [
+    { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
-    { label: 'Projects', path: '/projects' },
+    { label: 'Expertise', path: '/expertise' },
+    { label: 'Careers', path: '/careers' },
     { label: 'Contact', path: '/contact' },
 ];
 
-const Footer: React.FC = () => {
+interface NavigationProps {
+    onLinkClick: () => void;
+}
+
+const Footer: React.FC<NavigationProps> = ({ onLinkClick }) => {
     const { pathname } = useLocation();
 
     useEffect(() => {
@@ -24,7 +30,7 @@ const Footer: React.FC = () => {
 
     return (
 
-        <footer className="custom-footer py-lg-5">
+        <footer className="custom-footer">
             <div className='d-flex flex-column flex-lg-row justify-content-lg-between align-items-center'>
                 <div className='d-lg-flex align-items-center mt-3 mb-5 mt-lg-0 mb-lg-0'>
                     <NavLink
@@ -57,15 +63,6 @@ const Footer: React.FC = () => {
                             </NavLink>
                         </li>
                     ))}
-                    <li className='nav-link'>
-                        <a 
-                            className='resume-link' 
-                            href="/ConnorDailey-Resume(MASTER).pdf" 
-                            download="ConnorDailey_Resume"
-                        >
-                            Resume
-                        </a>
-                    </li>
                 </ul>
             </div>
         </footer>
