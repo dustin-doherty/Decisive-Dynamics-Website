@@ -1,0 +1,116 @@
+/* 
+  ----------------------------------
+  STYLES FOR THE HEADER
+  ----------------------------------
+*/
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--text-dark);
+  border-bottom: 1px solid #000;
+  padding: 0.5rem 1rem;
+}
+
+/* Container for aligning content */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand styling */
+.brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark-text);
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile overlay menu */
+.nav-menu.overlay {
+  position: fixed;
+  top: 65px;
+  right: 0;
+  width: 50%;
+  height: calc(100% - var(--header-height));
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Navigation list for mobile (overlay) */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 1rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--light-text);
+  transition: border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: var(--light-text);
+  border-bottom: 2px solid var(--active-link);
+}
+
+/* Desktop Overrides */
+@media screen and (min-width: 768px) {
+  /* Hide mobile overlay on desktop */
+  .nav-menu.overlay {
+      display: none;
+  }
+  
+  /* Display inline navigation menu */
+  .nav-menu {
+      display: block;
+  }
+  
+  /* Navigation list for desktop */
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 1rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    color: var(--dark-text);
+    padding-bottom: 0.25rem;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--dark-text);
+    border-bottom: 2px solid var(--active-link);
+  }
+}

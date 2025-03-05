@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build directories (global)
+dist/
+dist-ssr/
+build/
+out/
+
+# Editor and IDE settings
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+*.env
+
+# TypeScript build artifacts
+*.tsbuildinfo
+
+# Client-specific files
+client/.cache/
+client/public/static/
+client/public/*.html
+client/.next/
+client/.vercel/
+client/coverage/
+
+# Server-specific files
+server/dist/
