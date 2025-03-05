@@ -36,9 +36,7 @@ const Header: React.FC = () => {
                 <div className="header-container">
                     <NavLink
                         to="/"
-                        className={({ isActive }) =>
-                            `brand ${isActive ? 'active-brand' : 'inactive-brand'}`
-                        }
+                        className='brand'
                     >
                         Decisive Dynamics
                     </NavLink>
