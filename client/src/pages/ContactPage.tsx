@@ -4,7 +4,12 @@ const ContactPage: React.FC = () => {
 
     return (
         <>
-            <h1>Contact Page</h1>
+            <section className='contact-page__header'>
+                <h1 className='contact-page__headline'>Contact Us</h1>
+                <p className='contact-page__subtext'>
+                    Some text.
+                </p>
+            </section>
         </>
     );
 };

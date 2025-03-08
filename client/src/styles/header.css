@@ -9,8 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--text-dark);
-  border-bottom: 1px solid #000;
+  background-color: var(--main-background);
   padding: 0.5rem 1rem;
 }
 
@@ -83,7 +82,7 @@
 /* Desktop Overrides */
 @media screen and (min-width: 768px) {
   .site-header {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
   /* Hide mobile overlay on desktop */
   .nav-menu.overlay {
