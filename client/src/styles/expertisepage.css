@@ -3,3 +3,35 @@
   STYLES FOR THE EXPERTISE PAGE
   ----------------------------------
 */
+
+.expertise-page__header {
+  color: white;
+  background-color: #0B3954;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.expertise-page__headline {
+  font-size: 175%;
+  margin-bottom: 1rem;
+}
+
+.expertise-page__subtext {
+  font-size: 115%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .expertise-page__header {
+    padding: 3rem;
+  }
+  .expertise-page__headline {
+    font-size: 250%;
+  }
+  .expertise-page__subtext {
+    font-size: 125%;
+    text-align: center;
+  }
+}

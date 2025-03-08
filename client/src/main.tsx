@@ -34,6 +34,10 @@ const router = createBrowserRouter([
         element: <ExpertisePage />,
       },
       {
+        path: 'expertise/:type',
+        element: <ExpertisePage />,
+      },
+      {
         path: 'careers',
         element: <CareersPage />,
       },
