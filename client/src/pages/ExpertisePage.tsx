@@ -7,8 +7,16 @@ const ExpertisePage: React.FC = () => {
 
     return (
         <>
-            <h1>{type ? type.replace(/-/g, ' ') : 'Expertise'}</h1>
-            {/* Render content tailored to the 'type' */}
+            {type ? (
+                <h1>{type.replace(/-/g, ' ')}</h1>
+            ) : (
+                <section className='expertise-page__header'>
+                    <h1 className='expertise-page__headline'>Our Expertise</h1>
+                    <p className='expertise-page__subtext'>
+                        Some text.
+                    </p>
+                </section>
+            )}
         </>
     );
 };

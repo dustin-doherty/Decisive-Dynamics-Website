@@ -3,3 +3,35 @@
   STYLES FOR THE CONTACT PAGE
   ----------------------------------
 */
+
+.contact-page__header {
+  color: white;
+  background-color: #0B3954;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact-page__headline {
+  font-size: 175%;
+  margin-bottom: 1rem;
+}
+
+.contact-page__subtext {
+  font-size: 115%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page__header {
+    padding: 3rem;
+  }
+  .contact-page__headline {
+    font-size: 250%;
+  }
+  .contact-page__subtext {
+    font-size: 125%;
+    text-align: center;
+  }
+}

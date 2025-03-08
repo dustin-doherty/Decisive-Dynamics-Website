@@ -4,7 +4,12 @@ const CareersPage: React.FC = () => {
 
     return (
         <>
-            <h1>Careers Page</h1>
+            <section className='expertise-page__header'>
+                <h1 className='expertise-page__headline'>Careers</h1>
+                <p className='expertise-page__subtext'>
+                    Some text.
+                </p>
+            </section>
         </>
     );
 };

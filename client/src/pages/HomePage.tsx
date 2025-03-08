@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import testimonials from '../data/testimonials';
+import TestemonialCard from '../components/TestimonialCard';
 import '../styles/homepage.css';
 
 // Hero Page Videos
 import hero1 from '../assets/videos/hero1.mp4';
 import hero2 from '../assets/videos/hero2.mp4';
 import hero3 from '../assets/videos/hero3.mp4';
-import joinUsImg from '../assets/images/joinUs.jpg';
 const heroVideos = [hero1, hero2, hero3];
+
+// Images
+import joinUsImg from '../assets/images/joinUs.jpg';
+import amazingServiceImg from '../assets/images/amazingService.jpg';
+
 
 const HomePage: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -65,8 +71,8 @@ const HomePage: React.FC = () => {
             {/* Impact Section */}
             <section className='impact-section'>
                 <div className="impact-section__headline">
-                    <h2>Dynamic solutions.</h2>
-                    <h2>Decisive results.</h2>
+                    <h2><span className='impact-section__text-highlight'>Dynamic</span> strategies.</h2>
+                    <h2><span className='impact-section__text-highlight'>Decisive</span> execution.</h2>
                 </div>
                 <div className="impact-section__description">
                     <p>
@@ -79,23 +85,93 @@ const HomePage: React.FC = () => {
 
             {/* Expertise Section */}
             <section className='expertise-section'>
-                    <h2 className='expertise-section__headline'>Expertise</h2>
-                    <p className='expertise-section__subheadline'>$200M+ Projects & Programs Managed</p>
-                    <div className='expertise-section__links'>
-                        <div className="expertise-section__links-col1">
-                            <Link to="/expertise/utility-design">Utility Design</Link>
-                            <Link to="/expertise/stormwater-management">Stormwater Management</Link>
-                            <Link to="/expertise/water-and-wastewater">Water and Wastewater</Link>
-                            <Link to="/expertise/parks-and-recreation">Parks and Recreation</Link>
-                            <Link to="/expertise/civil-engineering">Civil Engineering</Link>
-                        </div>
-                        <div className="expertise-section__links-col2">
-                            <Link to="/expertise/due-diligence">Due Diligence</Link>
-                            <Link to="/expertise/planning">Planning</Link>
-                            <Link to="/expertise/transportation-engineering">Transportation Engineering</Link>
-                            <Link to="/expertise/construction-services">Construction Services</Link>
-                        </div>
+                <h2 className='expertise-section__headline'>Expertise</h2>
+                <p className='expertise-section__subheadline'>$200M+ Projects & Programs Managed</p>
+                <p className='expertise-section__text'>
+                    Our firm is uniquely positioned to deliver exceptional value by leveraging 
+                    extensive technical expertise, a commitment to responsiveness, and a proven 
+                    track record of delivering successful projects across Ohio.
+                </p>
+                <div className='expertise-section__links'>
+                    <div className="expertise-section__links-col1">
+                        <Link to="/expertise/utility-design">Utility Design</Link>
+                        <Link to="/expertise/stormwater-management">Stormwater Management</Link>
+                        <Link to="/expertise/water-and-wastewater">Water and Wastewater</Link>
+                        <Link to="/expertise/parks-and-recreation">Parks and Recreation</Link>
+                        <Link to="/expertise/civil-engineering">Civil Engineering</Link>
                     </div>
+                    <div className="expertise-section__links-col2">
+                        <Link to="/expertise/due-diligence">Due Diligence</Link>
+                        <Link to="/expertise/planning">Planning</Link>
+                        <Link to="/expertise/transportation-engineering">Transportation Engineering</Link>
+                        <Link to="/expertise/construction-services">Construction Services</Link>
+                    </div>
+                </div>
+            </section>
+            
+            {/* Service Section */}
+            <section className="service-section">
+                <div className="service-section__content">
+                    <h2 className="service-section__headline">
+                        <span className="service-section__minimize">Amazing</span> <span className="service-section__highlight">Service</span>. 
+                        <span> </span> 
+                        <span className="service-section__minimize">Unmatched</span> <span className="service-section__highlight">Expertise</span>.
+                    </h2>
+                    <p className="service-section__text1">
+                        Decisive Dynamics is unmatched in providing services for engineering and 
+                        construction projects. Our success is built on extensive program management 
+                        experience, real-world insights, a deep understanding of the design and 
+                        construction process, meticulous attention to detail, and a commitment to 
+                        professional care.
+                    </p>
+                    {/* Mobile-only image placed between paragraphs */}
+                    <div className="service-section__image-container mobile-only">
+                    <img 
+                        src={amazingServiceImg} 
+                        alt="Amazing Service Image" 
+                        className="service-section__image"
+                    />
+                    </div>
+                    <p className="service-section__text2">
+                        Our expertise in managing complex construction details and our in-depth knowledge 
+                        of cost and scheduling enable us to offer expert support when critical issues 
+                        arise. We blend this know-how with keen insight to achieve your project goals 
+                        while mitigating risk.
+                    </p>
+                </div>
+            {/* Desktop-only image placed on the right */}
+            <div className="service-section__image-container desktop-only">
+                <img 
+                src={amazingServiceImg} 
+                alt="Amazing Service Image" 
+                className="service-section__image"
+                />
+            </div>
+            </section>
+
+            {/* Testimonials Section */}
+            <section className='testimonials-section'>
+                <h2 className='testimonials-section__headline'>Awards and Testimonials</h2>
+                <p className='testimonials-section__subheadline'>What Our Clients Say</p>
+                <div className='testimonials-section__main-content'>
+                    <p className='testimonials-section__description'>
+                        Decisive Dynamics has earned high praise from
+                        clients and stakeholders for their technical
+                        expertise, effective communication, and ability to
+                        deliver quality results on time and within budget.
+                        Reviews often highlight their ability to anticipate
+                        challenges, propose innovative solutions, and
+                        maintain seamless coordination across
+                        multidisciplinary teams.
+                    </p>
+                    <div className='testimonials-section__cards'>
+                        {testimonials.map((testimonial, index) => (
+                            <div key={index} className={index !== testimonials.length - 1 ? 'testimonial-card__margin' : ''}>
+                                <TestemonialCard testimonial={testimonial} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </section>
 
             {/* Careers Section */}
