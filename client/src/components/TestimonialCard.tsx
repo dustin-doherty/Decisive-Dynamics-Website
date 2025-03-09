@@ -1,4 +1,4 @@
-import { Testimonial } from "../data/testimonials";
+import { Testimonial } from "../data/testimonialsList";
 
 interface TestimonialCardProps {
     testimonial: Testimonial;
