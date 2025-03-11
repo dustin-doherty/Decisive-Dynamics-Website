@@ -28,4 +28,13 @@
 
 .expertise-component__description-headline {
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+.expertise-component__description-paragraph {
+    text-align: center;
+}
+
+.expertise-component__margin-bottom {
+    margin-bottom: 1rem;
 }
