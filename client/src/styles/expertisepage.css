@@ -76,7 +76,6 @@
 @media screen and (min-width: 1500px) {
   .expertise-page__expertise-link-cards {
     margin: 2rem 10rem;
-    grid-template-columns: repeat(5, 1fr);
   }
 }
 

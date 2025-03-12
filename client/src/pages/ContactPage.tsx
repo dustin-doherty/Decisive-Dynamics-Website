@@ -7,7 +7,7 @@ const ContactPage: React.FC = () => {
             <section className='contact-page__header'>
                 <h1 className='contact-page__headline'>Contact Us</h1>
                 <p className='contact-page__subtext'>
-                    Some text.
+                    Connect with our experts to create lasting solutions.
                 </p>
             </section>
         </>
