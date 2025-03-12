@@ -7,7 +7,7 @@ const CareersPage: React.FC = () => {
             <section className='expertise-page__header'>
                 <h1 className='expertise-page__headline'>Careers</h1>
                 <p className='expertise-page__subtext'>
-                    Some text.
+                    Join a team where your future is built with innovation.
                 </p>
             </section>
         </>
