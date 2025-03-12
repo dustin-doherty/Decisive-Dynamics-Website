@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import testimonials from '../data/testimonials';
+import testimonials from '../data/testimonialsList';
 import TestemonialCard from '../components/TestimonialCard';
 import '../styles/homepage.css';
 
