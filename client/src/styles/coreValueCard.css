@@ -11,8 +11,9 @@
 
 .core-value__headline {
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
-.core-value__headline {
-
+.core-value__text {
+  text-align: center;
 }
