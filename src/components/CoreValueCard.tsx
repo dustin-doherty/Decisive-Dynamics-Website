@@ -1,5 +1,5 @@
-import { CoreValue } from '../data/coreValuesList';
-import '../styles/coreValueCard.css';
+import { CoreValue } from "../data/coreValuesList";
+import "../styles/coreValueCard.css";
 
 interface CareValueProps {
     value: CoreValue;

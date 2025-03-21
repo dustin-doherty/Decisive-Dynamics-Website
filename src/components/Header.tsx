@@ -1,8 +1,8 @@
-import React, { memo, useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import Navigation from './Navigation';
-import { useNavigation } from '../contexts/NavigationContext';
-import '../styles/header.css';
+import React, { memo, useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import Navigation from "./Navigation";
+import { useNavigation } from "../contexts";
+import "../styles/header.css";
 
 const Header: React.FC = () => {
     const { menuOpen, setMenuOpen } = useNavigation();
@@ -18,8 +18,8 @@ const Header: React.FC = () => {
             }
         };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, [setMenuOpen]);
 
     const handleMenuToggle = () => {
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                 <div className="header-container">
                     <NavLink
                         to="/"
-                        className='brand'
+                        className="brand"
                     >
                         Decisive Dynamics
                     </NavLink>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                             onClick={handleMenuToggle}
                             aria-label="Toggle navigation"
                         >
-                            {menuOpen ? '✖' : '☰'}
+                            {menuOpen ? "✖" : "☰"}
                         </button>
                     )}
                     {windowWidth >= 768 && (

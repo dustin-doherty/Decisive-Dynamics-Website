@@ -5,7 +5,7 @@ export interface CoreValue {
 
 const coreValueList: CoreValue[] = [
     {
-        title: 'Communication',
+        title: "Communication",
         description: 
             `Clients often highlight how seamlessly they work
             with our entire team. At Decisive Dynamics, this is
@@ -20,7 +20,7 @@ const coreValueList: CoreValue[] = [
             best interests at heart.`
     },
     {
-        title: 'People First',
+        title: "People First",
         description:
             `People are at the heart of everything we do - whether
             it’s our clients, our employees, or the communities
@@ -36,7 +36,7 @@ const coreValueList: CoreValue[] = [
             valued and supported.`
     },
     {
-        title: 'Collaboration',
+        title: "Collaboration",
         description:
             `We believe that collaboration is the cornerstone of
             innovation. At Decisive Dynamics, we bring together
@@ -53,7 +53,7 @@ const coreValueList: CoreValue[] = [
             overcome.`
     },
     {
-        title: 'Safety',
+        title: "Safety",
         description:
             `At Decisive Dynamics, safety is more than a policy -
             it’s a promise. We are committed to creating an

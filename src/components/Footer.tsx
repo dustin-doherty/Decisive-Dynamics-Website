@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import '../styles/footer.css';
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import "../styles/footer.css";
 
 interface NavLinkItem {
     label: string;
@@ -8,11 +8,11 @@ interface NavLinkItem {
 }
 
 const navLinks: NavLinkItem[] = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Expertise', path: '/expertise' },
-    { label: 'Careers', path: '/careers' },
-    { label: 'Contact', path: '/contact' },
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Expertise", path: "/expertise" },
+    { label: "Careers", path: "/careers" },
+    { label: "Contact", path: "/contact" },
 ];
 
 interface FooterProps {
@@ -46,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick = () => {} }) => {
                                 <NavLink
                                     to={path}
                                     className={({ isActive }) =>
-                                        `footer-nav-link ${isActive ? 'active' : ''}`
+                                        `footer-nav-link ${isActive ? "active" : ""}`
                                     }
                                     onClick={onLinkClick}
                                 >

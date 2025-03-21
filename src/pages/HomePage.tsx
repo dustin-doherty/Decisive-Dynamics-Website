@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import testimonials from '../data/testimonialsList';
-import TestemonialCard from '../components/TestimonialCard';
-import '../styles/homepage.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import testimonials from "../data/testimonialsList";
+import TestemonialCard from "../components/TestimonialCard";
+import "../styles/homepage.css";
 
 // Hero Page Videos
-import hero1 from '../assets/videos/hero1.mp4';
-import hero2 from '../assets/videos/hero2.mp4';
-import hero3 from '../assets/videos/hero3.mp4';
+import hero1 from "../assets/videos/hero1.mp4";
+import hero2 from "../assets/videos/hero2.mp4";
+import hero3 from "../assets/videos/hero3.mp4";
 const heroVideos = [hero1, hero2, hero3];
 
 // Images
-import joinUsImg from '../assets/images/joinUs.jpg';
-import amazingServiceImg from '../assets/images/amazingService.jpg';
-
+import joinUsImg from "../assets/images/joinUs.webp";
+import amazingServiceImg from "../assets/images/amazingService.webp";
 
 const HomePage: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,8 +43,8 @@ const HomePage: React.FC = () => {
             <section className="hero-section">
                 {/* Video Element A */}
                 <video
-                    className={`hero-video ${showFirst ? 'top-video' : 'bottom-video'} ${
-                        showFirst && fade ? 'fade-out' : ''
+                    className={`hero-video ${showFirst ? "top-video" : "bottom-video"} ${
+                        showFirst && fade ? "fade-out" : ""
                     }`}
                     src={showFirst ? heroVideos[currentIndex] : heroVideos[nextIndex]}
                     autoPlay
@@ -56,8 +55,8 @@ const HomePage: React.FC = () => {
                 />
                 {/* Video Element B */}
                 <video
-                    className={`hero-video ${!showFirst ? 'top-video' : 'bottom-video'} ${
-                        !showFirst && fade ? 'fade-out' : ''
+                    className={`hero-video ${!showFirst ? "top-video" : "bottom-video"} ${
+                        !showFirst && fade ? "fade-out" : ""
                     }`}
                     src={!showFirst ? heroVideos[currentIndex] : heroVideos[nextIndex]}
                     autoPlay
@@ -166,7 +165,7 @@ const HomePage: React.FC = () => {
                     </p>
                     <div className='testimonials-section__cards'>
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} className={index !== testimonials.length - 1 ? 'testimonial-card__margin' : ''}>
+                            <div key={index} className={index !== testimonials.length - 1 ? "testimonial-card__margin" : ""}>
                                 <TestemonialCard testimonial={testimonial} />
                             </div>
                         ))}

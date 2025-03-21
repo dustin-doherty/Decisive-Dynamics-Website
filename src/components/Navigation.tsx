@@ -1,5 +1,5 @@
-import React, { memo } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { memo } from "react";
+import { NavLink } from "react-router-dom";
 
 interface NavLinkItem {
     label: string;
@@ -11,11 +11,11 @@ interface NavigationProps {
 }
 
 const navLinks: NavLinkItem[] = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Expertise', path: '/expertise' },
-    { label: 'Careers', path: '/careers' },
-    { label: 'Contact', path: '/contact' },
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Expertise", path: "/expertise" },
+    { label: "Careers", path: "/careers" },
+    { label: "Contact", path: "/contact" },
 ];
 
 const Navigation: React.FC<NavigationProps> = ({ onLinkClick }) => {
@@ -26,7 +26,7 @@ const Navigation: React.FC<NavigationProps> = ({ onLinkClick }) => {
                     <NavLink
                         to={path}
                         className={({ isActive }) =>
-                            `nav-link ${isActive ? 'active' : ''}`
+                            `nav-link ${isActive ? "active" : ""}`
                         }
                         onClick={onLinkClick}
                     >

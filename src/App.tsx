@@ -1,12 +1,12 @@
-import { Outlet } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import { NavigationProvider, useNavigation } from './contexts/NavigationContext';
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { NavigationProvider, useNavigation } from "./contexts";
 
 const MainContent: React.FC = () => {
   const { menuOpen } = useNavigation();
   return (
-    <main className={`flex-grow-1 ${menuOpen ? 'blur' : ''}`}>
+    <main className={`flex-grow-1 ${menuOpen ? "blur" : ""}`}>
       <Outlet />
     </main>
   )

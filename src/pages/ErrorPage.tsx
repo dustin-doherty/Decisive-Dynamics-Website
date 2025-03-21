@@ -1,4 +1,4 @@
-import { useRouteError, isRouteErrorResponse } from 'react-router-dom';
+import { useRouteError, isRouteErrorResponse } from "react-router-dom";
 
 const ErrorPage: React.FC = () => {
     const error = useRouteError();
@@ -21,7 +21,7 @@ const ErrorPage: React.FC = () => {
             <h1>Oops!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
             <p>
-                <i>{error instanceof Error ? error.message : 'Unknown error occurred'}</i>
+                <i>{error instanceof Error ? error.message : "Unknown error occurred"}</i>
             </p>
         </div>
     );

@@ -1,9 +1,9 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import '../styles/expertisepage.css';
-import expertiseList from '../data/expertiseList';
-import ExpertiseComponent from '../components/Expertise';
-import ExpertiseLinkCard from '../components/ExpertiseLinkCard';
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import "../styles/expertisepage.css";
+import expertiseList from "../data/expertiseList";
+import ExpertiseComponent from "../components/Expertise";
+import ExpertiseLinkCard from "../components/ExpertiseLinkCard";
 
 const ExpertisePage: React.FC = () => {
     const { type } = useParams<{ type: string }>();

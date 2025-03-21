@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
-import CoreValueCard from '../components/CoreValueCard';
-import coreValueList from '../data/coreValuesList';
-import introImg from '../assets/images/aboutUs_introduction.jpg';
-import historyImg from '../assets/images/aboutUs_history.jpg';
-import leadershipImg from '../assets/images/aboutUs_leadership.png';
-import '../styles/aboutpage.css';
+import { Link } from "react-router-dom";
+import CoreValueCard from "../components/CoreValueCard";
+import coreValueList from "../data/coreValuesList";
+import introImg from "../assets/images/aboutUs_introduction.webp";
+import historyImg from "../assets/images/aboutUs_history.webp";
+import leadershipImg from "../assets/images/aboutUs_leadership.webp";
+import "../styles/aboutpage.css";
 
 const AboutPage: React.FC = () => {
     return (
@@ -124,7 +124,7 @@ const AboutPage: React.FC = () => {
             <section className='about-page__values-section'>
                 <h2 className='about-page__values-headline'>Our Values</h2>
                 {coreValueList.map((value, index) => (
-                    <div key={index} className={index !== coreValueList.length - 1 ? 'about-page__values-card' : ''}>
+                    <div key={index} className={index !== coreValueList.length - 1 ? "about-page__values-card" : ""}>
                         <CoreValueCard value={value} />
                     </div>
                 ))}

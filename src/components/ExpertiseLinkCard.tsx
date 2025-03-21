@@ -1,6 +1,6 @@
-import { Expertise } from '../data/expertiseList';
-import { Link } from 'react-router-dom';
-import '../styles/expertiseLinkCard.css';
+import { Expertise } from "../data/expertiseList";
+import { Link } from "react-router-dom";
+import "../styles/expertiseLinkCard.css";
 
 interface ExpertiseLinkCardProps {
     expertise: Expertise;

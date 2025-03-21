@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Expertise } from "../data/expertiseList";
-import '../styles/expertiseComponent.css';
+import "../styles/expertiseComponent.css";
 
 interface ExpertiseComponentProps {
     expertise: Expertise;

@@ -61,7 +61,8 @@
 /* Main Section */
 
 .contact-page__main-section {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-page__main-image-container {
@@ -97,7 +98,12 @@
 
 .contact-page__info-item i {
   font-size: 1.5rem;
-  color: #0B3954;
+  color: #236992;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-page__info-item i:hover {
+  color: #74CCFF;
 }
 
 .contact-page__info-item p {
