@@ -1,0 +1,136 @@
+/* 
+  ----------------------------------
+  STYLES FOR THE CONTACT PAGE
+  ----------------------------------
+*/
+
+/* Toast Message */
+
+.copy-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Page Header */
+
+.contact-page__header {
+  color: white;
+  background-color: #0B3954;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact-page__headline {
+  font-size: 175%;
+  margin-bottom: 1rem;
+}
+
+.contact-page__subtext {
+  font-size: 115%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page__header {
+    padding: 3rem;
+  }
+  .contact-page__headline {
+    font-size: 250%;
+  }
+  .contact-page__subtext {
+    font-size: 125%;
+    text-align: center;
+  }
+}
+
+/* Main Section */
+
+.contact-page__main-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page__main-image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.contact-page__main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-page__info-container {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-page__info-item i {
+  font-size: 1.5rem;
+  color: #236992;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-page__info-item i:hover {
+  color: #74CCFF;
+}
+
+.contact-page__info-item p {
+  margin: 0;
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (min-width: 400px) {
+  .contact-page__info-item {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page__main-image-container {
+    height: 400px;
+  }
+  .contact-page__info-container {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 3rem;
+  }
+  .contact-page__info-item {
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}

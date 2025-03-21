@@ -1,0 +1,355 @@
+/* 
+  ----------------------------------
+  STYLES FOR THE ABOUT PAGE
+  ----------------------------------
+*/
+
+/* Page Header */
+
+.about-page__header {
+  color: white;
+  background-color: #0B3954;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-page__headline {
+  font-size: 175%;
+  margin-bottom: 1rem;
+}
+
+.about-page__subtext {
+  font-size: 115%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-page__header {
+    padding: 3rem;
+  }
+  .about-page__headline {
+    font-size: 250%;
+  }
+  .about-page__subtext {
+    font-size: 125%;
+    text-align: center;
+  }
+}
+
+/* Introduction Section */
+
+.about-page__intro-section {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page__intro-headline {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+
+.about-page__intro-text-container {
+  font-size: 100%;
+}
+
+.about-page__intro-text {
+  margin-bottom: 1rem;
+}
+
+.about-page__intro-image-container {
+  width: 100%;     
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.about-page__intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .about-page__intro-section {
+    margin: 2rem;
+    flex-direction: row;
+  }
+  .about-page__intro-image-container {
+    align-self: flex-start;
+    width: 250px;
+    height: 250px;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+  .about-page__intro-main-container {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1028px) {
+  .about-page__intro-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page__intro-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-page__intro-section {
+    margin: 2rem 12rem;
+  }
+}
+
+/* Firm History Section */
+
+.about-page__history-section {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page__history-headline {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+
+.about-page__history-text-container {
+  font-size: 100%;
+}
+
+.about-page__history-text {
+  margin-bottom: 1rem;
+}
+
+.about-page__history-image-container {
+  width: 100%;     
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.about-page__history-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .about-page__history-section {
+    margin: 2rem;
+    flex-direction: row;
+  }
+  .about-page__history-image-container {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+  .about-page__history-main-container {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1028px) {
+  .about-page__history-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page__history-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-page__history-section {
+    margin: 2rem 12rem;
+  }
+}
+
+/* Leadership Section */
+
+.about-page__leadership-section {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page__leadership-headline {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+
+.about-page__leadership-text-container {
+  font-size: 100%;
+}
+
+.about-page__leadership-text {
+  margin-bottom: 1rem;
+}
+
+.about-page__leadership-image-container {
+  width: 100%;     
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.about-page__leadership-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .about-page__leadership-section {
+    margin: 2rem;
+    flex-direction: row;
+  }
+  .about-page__leadership-image-container {
+    align-self: flex-start;
+    width: 250px;
+    height: 250px;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+  .about-page__leadership-main-container {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1028px) {
+  .about-page__leadership-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page__leadership-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-page__leadership-section {
+    margin: 2rem 12rem;
+  }
+}
+
+/* Core Values Section */
+
+.about-page__values-section {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page__values-card {
+  margin-bottom: 1rem;
+}
+
+.about-page__values-headline {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-page__values-section {
+    margin: 2rem
+  }
+}
+
+@media (min-width: 1028px) {
+  .about-page__values-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page__values-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-page__values-section {
+    margin: 2rem 12rem;
+  }
+}
+
+/* Contact Section */
+
+.about-page__contact-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/images/contactBackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.about-page__contact-headline {
+  font-size: 175%;
+  margin-bottom: 1rem;
+}
+
+.about-page__contact-subheadline {
+  font-size: 100%;
+  margin-bottom: 2rem;
+}
+
+.about-page__contact-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #683257;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.about-page__contact-button a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-page__contact-headline {
+      font-size: 250%;
+  }
+  .about-page__contact-subheadline {
+      font-size: 115%;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .about-page__contact-section {
+      padding: 4rem 2rem;
+  }
+  .about-page__contact-headline {
+      margin-bottom: 2rem;
+  }
+}
