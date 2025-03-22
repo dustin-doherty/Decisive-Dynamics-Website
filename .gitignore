@@ -27,18 +27,25 @@ out/
 *.sw?
 
 # Environment variables
-*.env
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
 
 # TypeScript build artifacts
 *.tsbuildinfo
 
-# Client-specific files
-client/.cache/
-client/public/static/
-client/public/*.html
-client/.next/
-client/.vercel/
-client/coverage/
+# Test coverage
+coverage/
+.nyc_output/
 
-# Server-specific files
-server/dist/
+# Vite specific
+.vite/
+
+# Cache
+.cache/
+
