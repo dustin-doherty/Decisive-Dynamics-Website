@@ -38,7 +38,7 @@ const Header: React.FC = () => {
                         to="/"
                         className="brand"
                     >
-                        Decisive Dynamics
+                        <span className="brand-d">D</span>ecisive <span className="brand-d">D</span>ynamics
                     </NavLink>
                     {windowWidth < 768 && (
                         <button
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                             onClick={handleMenuToggle}
                             aria-label="Toggle navigation"
                         >
-                            {menuOpen ? "✖" : "☰"}
+                            ☰
                         </button>
                     )}
                     {windowWidth >= 768 && (
