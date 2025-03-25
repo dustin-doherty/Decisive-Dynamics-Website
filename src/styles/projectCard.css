@@ -1,0 +1,86 @@
+/* 
+  ----------------------------------
+  STYLES FOR THE PROJECT CARD
+  ----------------------------------
+*/
+
+.project-card__container {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    padding: 2rem 1rem;
+}
+
+.project-card__container:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.project-card__heading {
+    margin-bottom: 1rem;
+}
+
+.project-card__inner-container {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .project-card__inner-container {
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+}
+
+/* Side Bar Content */
+
+.project-card__side-bar {
+    
+}
+
+.project-card__side-bar-group {
+
+}
+
+.project-card__side-bar-title {
+    color: green;
+}
+
+.project-card__side-bar-text {
+
+}
+
+.project-card__side-bar-list {
+
+}
+
+.project-card__side-bar-list-item {
+    list-style: circle;
+}
+
+/* Main Content */
+
+.project-card__main-content {
+
+}
+
+.project-card__main-content-group {
+
+}
+
+.project-card__main-title {
+    color: green;
+}
+
+.project-card__main-text {
+
+}
+
+.project-card__main-scope-container {
+
+}
+
+.project-card__main-scope-heading {
+    font-weight: 600;
+}
+
+.project-card__main-scope-context {
+
+}
