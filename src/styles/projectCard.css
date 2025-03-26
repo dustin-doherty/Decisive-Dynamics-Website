@@ -32,23 +32,24 @@
 /* Side Bar Content */
 
 .project-card__side-bar {
-    
+    margin: 0;
 }
 
 .project-card__side-bar-group {
-
+    margin-bottom: 0.5rem;
 }
 
 .project-card__side-bar-title {
+    font-weight: 600;
     color: green;
 }
 
 .project-card__side-bar-text {
-
+    font-size: 1rem;
 }
 
 .project-card__side-bar-list {
-
+    font-size: 1rem;
 }
 
 .project-card__side-bar-list-item {
@@ -58,23 +59,24 @@
 /* Main Content */
 
 .project-card__main-content {
-
+    margin: 0;
 }
 
-.project-card__main-content-group {
-
+.project-card__main-content-group:not(:last-child) {
+    margin-bottom: 0.5rem;
 }
 
 .project-card__main-title {
+    font-weight: 600;
     color: green;
 }
 
-.project-card__main-text {
-
+.project-card__overview-text {
+    margin-bottom: 0.5rem;
 }
 
 .project-card__main-scope-container {
-
+    margin-bottom: 0.5rem;
 }
 
 .project-card__main-scope-heading {
@@ -82,5 +84,5 @@
 }
 
 .project-card__main-scope-context {
-
+    font-size: 1rem;
 }

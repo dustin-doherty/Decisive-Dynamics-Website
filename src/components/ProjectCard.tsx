@@ -11,6 +11,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className='project-card__container'>
             <h4 className='project-card__heading'>{project.name}</h4>
             <div className='project-card__inner-container'>
+                {/* Side Bar */}
                 <div className='project-card__side-bar'>
                     <div className='project-card__side-bar-group'>
                         <p className='project-card__side-bar-title'>Owner/Client</p>
@@ -45,6 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                         <p className='project-card__side-bar-text'>{project.staff}</p>
                     </div>
                 </div>
+                {/* Main Content */}
                 <div className='project-card__main-content'>
                     <div className='project-card__main-content-group'>
                         <p className='project-card__main-title'>Owner Objective</p>
@@ -52,7 +54,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     </div>
                     <div className='project-card__main-content-group'>
                         <p className='project-card__main-title'>Project Overview and Approach</p>
-                        <p className='project-card__main-text'>{project.overview.intro}</p>
+                        <p className='project-card__overview-text'>{project.overview.intro}</p>
                         {project.overview.scope.map((scope) => (
                             <div className='project-card__main-scope-container'>
                                 <p className='project-card__main-scope-heading'>{scope.heading}</p>
