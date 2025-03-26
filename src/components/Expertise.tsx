@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Expertise } from "../data/expertiseList";
+import projectList from "../data/projectList";
+import ProjectCard from "./ProjectCard";
 import "../styles/expertiseComponent.css";
 
 interface ExpertiseComponentProps {
@@ -36,6 +38,14 @@ const ExpertiseComponent: React.FC<ExpertiseComponentProps> = ({ expertise }) =>
                         {paragraph}
                     </p>
                 ))}
+            </section>
+            {/* Project Section */}
+            <section className='expertise-component__project-section'>
+                {projectList.map((project) => 
+                    project.category === expertise.id && (
+                        <ProjectCard project={project} />
+                    )
+                )}
             </section>
             {/* Contact Section */}
             <section className='expertise-component__contact-section'>

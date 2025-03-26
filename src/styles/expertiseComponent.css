@@ -106,6 +106,12 @@
     }
 }
 
+/* Project Section */
+
+.expertise-component__project-section {
+    margin: 2rem;
+}
+
 /* Contact Section */
 
 .expertise-component__contact-section {
