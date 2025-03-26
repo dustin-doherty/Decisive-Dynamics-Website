@@ -1,10 +1,12 @@
 export interface CoreValue {
+    icon: string;
     title: string;
     description: string;
 }
 
 const coreValueList: CoreValue[] = [
     {
+        icon: "💬",
         title: "Communication",
         description: 
             `Clients often highlight how seamlessly they work
@@ -19,7 +21,8 @@ const coreValueList: CoreValue[] = [
             listen carefully, act decisively, and always keep your
             best interests at heart.`
     },
-    {
+    {   
+        icon: "👥",
         title: "People First",
         description:
             `People are at the heart of everything we do - whether
@@ -36,6 +39,7 @@ const coreValueList: CoreValue[] = [
             valued and supported.`
     },
     {
+        icon: "🤝",
         title: "Collaboration",
         description:
             `We believe that collaboration is the cornerstone of
@@ -53,6 +57,7 @@ const coreValueList: CoreValue[] = [
             overcome.`
     },
     {
+        icon: "🛡️",
         title: "Safety",
         description:
             `At Decisive Dynamics, safety is more than a policy -
