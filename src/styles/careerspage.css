@@ -43,6 +43,7 @@
 
 .careers-page__nav {
   margin: 2rem 1rem;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
