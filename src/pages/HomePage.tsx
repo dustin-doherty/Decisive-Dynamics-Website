@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import testimonials from "../data/testimonialsList";
 import TestemonialCard from "../components/TestimonialCard";
+import ContactSection from "../components/ContactSection";
 import "../styles/homepage.css";
+import "../styles/contactsection.css";
 
 // Hero Page Videos
 import hero1 from "../assets/videos/hero1.mp4";
@@ -193,6 +195,9 @@ const HomePage: React.FC = () => {
                         </button>
                     </div>
             </section>
+
+            {/* Contact Section */}
+            <ContactSection />
         </>
     );
 };

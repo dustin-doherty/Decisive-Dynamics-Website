@@ -1,0 +1,61 @@
+/* 
+    CONTACT SECTION STYLES
+*/
+
+.contact-section__contact-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/images/contactBackground.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .contact-section__contact-headline {
+    font-size: 175%;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section__contact-subheadline {
+    font-size: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-section__contact-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #683257;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .contact-section__contact-button a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .contact-section__contact-headline {
+        font-size: 250%;
+    }
+    .contact-section__contact-subheadline {
+        font-size: 115%;
+    }
+  }
+  
+  @media screen and (min-width: 1028px) {
+    .contact-section__contact-section {
+        padding: 4rem 2rem;
+    }
+    .contact-section__contact-headline {
+        margin-bottom: 2rem;
+    }
+  }

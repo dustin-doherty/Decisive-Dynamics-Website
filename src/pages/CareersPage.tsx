@@ -11,7 +11,7 @@ import CareersFAQ from "../components/careers/CareersFAQ";
 
 const CareersPage: React.FC = () => {
     const { section } = useParams<{ section?: string }>();
-
+    
     if (!section) {
         return (
             <>

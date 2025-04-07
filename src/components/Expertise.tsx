@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Expertise } from "../data/expertiseList";
 import projectList from "../data/projectList";
 import ProjectCard from "./ProjectCard";
+import ContactSection from "./ContactSection";
+import "../styles/contactsection.css";
 import "../styles/expertiseComponent.css";
 
 interface ExpertiseComponentProps {
@@ -48,17 +50,7 @@ const ExpertiseComponent: React.FC<ExpertiseComponentProps> = ({ expertise }) =>
                 )}
             </section>
             {/* Contact Section */}
-            <section className='expertise-component__contact-section'>
-                <h2 className='expertise-component__contact-headline'>
-                    Ready to Build Together?
-                </h2>
-                <p className='expertise-component__contact-subheadline'>
-                    Contact us now and discover how our expertise can drive your project forward.
-                </p>
-                <button className='expertise-component__contact-button'>
-                    <Link to='/contact'>Contact</Link>
-                </button>
-            </section>
+            <ContactSection />
         </>
         
     );
