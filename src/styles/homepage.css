@@ -39,7 +39,7 @@
 /* Impact Section Styles */
 
 .impact-section {
-  background-color: #0B3954;
+  background-color: var(--color-deep-teal);
   color: white;
   display: flex;
   flex-direction: column;
@@ -53,12 +53,12 @@
 }
 
 .impact-section__text-highlight {
-  color: #DB504A;
+  color: var(--color-sand);
+  font-weight: 700;
 }
 
 .impact-section__headline h2 {
   font-size: 175%;
-  font-weight: bold;
 }
 
 .impact-section__description {
@@ -113,33 +113,47 @@
 }
 
 .expertise-section__headline {
-  font-size: 175%;
+  font-size: 200%;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  text-shadow: 1px 1px 2px var(--color-sand);
 }
 
 .expertise-section__subheadline {
+  font-size: 100%;
   font-weight: 200;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text-green);
+  color: var(--color-forest-green);
 }
 
 .expertise-section__text {
+  font-size: 100%;
   margin: 0 1rem 1rem;
+}
+
+.expertise-section__link-headline {
+  font-size: 150%;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .expertise-section__links {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 1rem;
 }
 
 .expertise-section__links a {
   font-size: 110%;
+  color: var(--color-deep-teal);
   text-decoration: none;
   margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.expertise-section__links a:hover {
+  border-bottom: 1px solid var(--text-gray);
 }
 
 .expertise-section__links-col1 {
@@ -154,11 +168,18 @@
 
 @media screen and (min-width: 768px) {
   .expertise-section__headline {
-    font-size: 250%;
+    font-size: 300%;
+  }
+  .expertise-section__subheadline {
+    font-size: 125%;
   }
   .expertise-section__text {
+    font-size: 120%;
+    max-width: 90%;
     text-align: center;
-    max-width: 75%;
+  }
+  .expertise-section__link-headline {
+    font-size: 175%;
   }
   .expertise-section__links {
     flex-direction: row;
@@ -179,6 +200,12 @@
 
 @media screen and (min-width: 1024px) {
   .expertise-section__text {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .expertise-section__text {
     max-width: 60%;
   }
 }
@@ -186,7 +213,7 @@
 /* Service Section */
 
 .service-section {
-  background-color: #774C60;
+  background-color: var(--color-moss);
   color: white;
   padding: 2rem 1rem;
   display: flex;
@@ -200,7 +227,7 @@
 
 .service-section__headline {
   margin-bottom: 1rem;
-  font-size: 175%;
+  font-size: 200%;
 }
 
 .service-section__highlight {
@@ -253,6 +280,12 @@
     display: block;
     margin: 0 auto;
   }
+  .service-section__headline {
+    font-size: 225%;
+  }
+  .service-section__text1, .service-section__text2 {
+    font-size: 115%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -276,9 +309,31 @@
     margin-bottom: 0rem;
     width: 100%;
   }
+  .service-section__headline {
+    font-size: 250%;
+  }
+  .service-section__text1, .service-section__text2 {
+    font-size: 120%;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .service-section__headline {
+    font-size: 275%;
+  }
+  .service-section__text1, .service-section__text2 {
+    font-size: 125%;
+  }
+}
 
+@media screen and (min-width: 1200px) {
+  .service-section__headline {
+    font-size: 300%;
+  }
+  .service-section__text1, .service-section__text2 {
+    font-size: 130%;
+  }
+}
 
 /* Testimonials Section */
 
@@ -290,13 +345,17 @@
 }
 
 .testimonials-section__headline {
+  font-size: 200%;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--color-sand);
 }
 
 .testimonials-section__subheadline {
+  font-size: 115%;
   margin-bottom: 2rem;
   font-weight: 200;
-  color: var(--text-green);
+  color: var(--color-forest-green);
 }
 
 .testimonials-section__main-content {
@@ -306,7 +365,8 @@
 }
 
 .testimonials-section__description {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 100%;
 }
 
 .testimonial-card {
@@ -356,7 +416,10 @@
 
 @media screen and (min-width: 768px) {
   .testimonials-section__headline {
-    font-size: 250%;
+    font-size: 300%;
+  }
+  .testimonials-section__subheadline {
+    font-size: 125%;
   }
 }
 
@@ -376,6 +439,9 @@
   .testimonial-card__margin {
     margin-bottom: 0;
   }
+  .testimonials-section__description {
+    font-size: 115%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -390,7 +456,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
-  background-color: #1D7874;
+  background-color: var(--color-forest-green);
   color: white;
 }
 
@@ -430,7 +496,7 @@
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   border: none;
-  background-color: #683257;
+  background-color: var(--color-purple);
   color: white;
   font-size: 1rem;
   cursor: pointer;

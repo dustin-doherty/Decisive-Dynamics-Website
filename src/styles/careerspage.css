@@ -8,7 +8,7 @@
 
 .careers-page__header {
   color: white;
-  background-color: #0B3954;
+  background-color: var(--color-deep-teal);
   display: flex;
   flex-direction: column;
   align-items: center;

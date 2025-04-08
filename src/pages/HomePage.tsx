@@ -93,6 +93,7 @@ const HomePage: React.FC = () => {
                     extensive technical expertise, a commitment to responsiveness, and a proven 
                     track record of delivering successful projects across Ohio.
                 </p>
+                <h3 className='expertise-section__link-headline'>Explore Our Mastery</h3>
                 <div className='expertise-section__links'>
                     <div className="expertise-section__links-col1">
                         <Link to="/expertise/utility-design">Utility Design</Link>
@@ -152,7 +153,7 @@ const HomePage: React.FC = () => {
 
             {/* Testimonials Section */}
             <section className='testimonials-section'>
-                <h2 className='testimonials-section__headline'>Awards and Testimonials</h2>
+                <h2 className='testimonials-section__headline'>Testimonials</h2>
                 <p className='testimonials-section__subheadline'>What Our Clients Say</p>
                 <div className='testimonials-section__main-content'>
                     <p className='testimonials-section__description'>
