@@ -12,6 +12,20 @@
   --text-gray: #7A8086;
   --text-green: #169873;
   --text-gold: #D4AF37;
+  --color-purple: #683257;
+
+  /* Deep teal – primary dark tone */
+  --color-deep-teal:   #174343;
+  /* Olive green – secondary */
+  --color-olive-green: #979D74;
+  /* Sand – warm accent */
+  --color-sand: #D0C78B;
+  /* Forest green – dark accent */
+  --color-forest-green: #395B50;
+  /* Moss green – midtone */
+  --color-moss: #60765F;
+  /* Off-white – light background */
+  --color-cream: #ECEAE7;
 }
 
 h1, h2, h3, h4, h5, h6 {
