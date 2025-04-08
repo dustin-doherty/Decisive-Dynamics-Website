@@ -2,6 +2,7 @@ import React, { memo, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Navigation from "./Navigation";
 import { useNavigation } from "../contexts";
+import ddGraphic from "../assets/images/DD_graphic.png";
 import "../styles/header.css";
 
 const Header: React.FC = () => {
@@ -36,9 +37,8 @@ const Header: React.FC = () => {
                 <div className="header-container">
                     <NavLink
                         to="/"
-                        className="brand"
                     >
-                        <span className="brand-d">D</span>ecisive <span className="brand-d">D</span>ynamics
+                        <img src={ddGraphic} alt="Decisive Dynamics" className="brand-graphic" />
                     </NavLink>
                     {windowWidth < 768 && (
                         <button
