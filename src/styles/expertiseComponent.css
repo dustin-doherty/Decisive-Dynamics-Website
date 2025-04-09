@@ -61,7 +61,25 @@
 .expertise-component__description-paragraph {
     text-align: center;
     font-size: 100%;
+    margin-bottom: 2rem;
+}
+
+.expertise-component__bullet-headline {
+    font-size: 125%;
+    text-align: center;
     margin-bottom: 1rem;
+}
+
+.expertise-component__bullet-list {
+    font-size: 100%;
+}
+
+.expertise-component__bullet-item {
+    list-style-type: disc;
+}
+
+.expertise-component__bullet-item:not(:last-child) {
+    margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 568px) {
@@ -84,6 +102,13 @@
         font-size: 250%;
     }
     .expertise-component__description-paragraph {
+        font-size: 115%;
+    }
+    .expertise-component__bullet-headline {
+        font-size: 150%;
+    }
+    
+    .expertise-component__bullet-list {
         font-size: 115%;
     }
 }
