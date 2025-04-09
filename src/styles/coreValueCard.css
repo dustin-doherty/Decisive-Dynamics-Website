@@ -15,7 +15,7 @@
 
 .core-value__card-container:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 12px var(--color-deep-teal);
 }
 
 .core-value__content {

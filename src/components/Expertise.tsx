@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Expertise } from "../data/expertiseList";
-import projectList from "../data/projectList";
-import ProjectCard from "./ProjectCard";
+// import projectList from "../data/projectList";
+// import ProjectCard from "./ProjectCard";
 import ContactSection from "./ContactSection";
 import "../styles/contactsection.css";
 import "../styles/expertiseComponent.css";
@@ -40,15 +40,23 @@ const ExpertiseComponent: React.FC<ExpertiseComponentProps> = ({ expertise }) =>
                         {paragraph}
                     </p>
                 ))}
+                <h3 className="expertise-component__bullet-headline">Key Services and Capabilities</h3>
+                <ul className="expertise-component__bullet-list">
+                    {expertise.bullets.map((bullet, index) => (
+                        <li key={index} className="expertise-component__bullet-item">
+                            {bullet}
+                        </li>
+                    ))}
+                </ul>
             </section>
             {/* Project Section */}
-            <section className='expertise-component__project-section'>
+            {/* <section className='expertise-component__project-section'>
                 {projectList.map((project) => 
                     project.category === expertise.id && (
                         <ProjectCard project={project} />
                     )
                 )}
-            </section>
+            </section> */}
             {/* Contact Section */}
             <ContactSection />
         </>
