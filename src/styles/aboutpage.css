@@ -8,7 +8,7 @@
 
 .about-page__header {
   color: white;
-  background-color: #0B3954;
+  background-color: var(--color-deep-teal);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,89 @@
   .about-page__subtext {
     font-size: 125%;
     text-align: center;
+  }
+}
+
+/* About Page Nav */
+
+.about-page__nav {
+  margin: 2rem 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.about-page__nav-link {
+  text-decoration: none;
+  color: var(--dark-text);
+  transition: border-bottom 0.2s ease;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+}
+
+.about-page__nav-link:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.about-page__nav-link:hover {
+  border-bottom: 3px solid var(--active-link);
+}
+
+.about-page__nav-link--active {
+  border-bottom: 3px solid var(--active-link);
+}
+
+@media screen and (min-width: 768px) {
+  .about-page__nav {
+    flex-direction: row;
+  }
+  .about-page__nav-link:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .about-page__nav {
+    margin: 2rem 4rem;
+    gap: 4rem;
+  }
+  .about-page__nav-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-page__nav {
+    margin: 2rem 6rem;
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .about-page__nav {
+    margin: 2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .about-page__nav {
+    margin: 2rem 12rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .about-page__nav {
+    margin: 2rem 18rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .about-page__nav {
+    margin: 2rem 20rem;
   }
 }
 
@@ -267,6 +350,7 @@
 
 .about-page__values-headline {
   font-size: 150%;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -291,65 +375,5 @@
 @media (min-width: 1500px) {
   .about-page__values-section {
     margin: 2rem 12rem;
-  }
-}
-
-/* Contact Section */
-
-.about-page__contact-section {
-  padding: 2rem 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../assets/images/contactBackground.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.about-page__contact-headline {
-  font-size: 175%;
-  margin-bottom: 1rem;
-}
-
-.about-page__contact-subheadline {
-  font-size: 100%;
-  margin-bottom: 2rem;
-}
-
-.about-page__contact-button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  border: none;
-  background-color: #683257;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.about-page__contact-button a {
-  color: inherit;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
-  .about-page__contact-headline {
-      font-size: 250%;
-  }
-  .about-page__contact-subheadline {
-      font-size: 115%;
-  }
-}
-
-@media screen and (min-width: 1028px) {
-  .about-page__contact-section {
-      padding: 4rem 2rem;
-  }
-  .about-page__contact-headline {
-      margin-bottom: 2rem;
   }
 }

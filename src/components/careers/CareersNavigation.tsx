@@ -23,14 +23,6 @@ const CareersNavigation: React.FC = () => {
                     Our Culture
                 </NavLink>
                 <NavLink 
-                    to="/careers/openings"
-                    className={({ isActive }) => 
-                        `careers-page__nav-link${isActive ? " careers-page__nav-link--active" : ""}`
-                    }
-                >
-                    Current Openings
-                </NavLink>
-                <NavLink 
                     to="/careers/benefits"
                     className={({ isActive }) => 
                         `careers-page__nav-link${isActive ? " careers-page__nav-link--active" : ""}`
@@ -45,14 +37,6 @@ const CareersNavigation: React.FC = () => {
                     }
                 >
                     Application Process
-                </NavLink>
-                <NavLink 
-                    to="/careers/faq"
-                    className={({ isActive }) => 
-                        `careers-page__nav-link${isActive ? " careers-page__nav-link--active" : ""}`
-                    }
-                >
-                    FAQs
                 </NavLink>
             </nav>
         </section>

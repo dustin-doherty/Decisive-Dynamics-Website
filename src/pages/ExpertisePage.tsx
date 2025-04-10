@@ -1,9 +1,11 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "../styles/expertisepage.css";
+import "../styles/contactsection.css";
 import expertiseList from "../data/expertiseList";
 import ExpertiseComponent from "../components/Expertise";
 import ExpertiseLinkCard from "../components/ExpertiseLinkCard";
+import ContactSection from "../components/ContactSection";
 
 const ExpertisePage: React.FC = () => {
     const { type } = useParams<{ type: string }>();
@@ -30,17 +32,7 @@ const ExpertisePage: React.FC = () => {
                         ))}
                     </section>
                     {/* Contact Section */}
-                    <section className='expertise-component__contact-section'>
-                        <h2 className='expertise-component__contact-headline'>
-                            Ready to Build Together?
-                        </h2>
-                        <p className='expertise-component__contact-subheadline'>
-                            Contact us now and discover how our expertise can drive your project forward.
-                        </p>
-                        <button className='expertise-component__contact-button'>
-                            <Link to='/contact'>Contact</Link>
-                        </button>
-                    </section>
+                    <ContactSection />
                 </>
             )}
         </>

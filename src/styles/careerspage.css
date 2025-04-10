@@ -8,7 +8,7 @@
 
 .careers-page__header {
   color: white;
-  background-color: #0B3954;
+  background-color: var(--color-deep-teal);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,10 +43,13 @@
 
 .careers-page__nav {
   margin: 2rem 1rem;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
 }
 
 .careers-page__nav-link {
@@ -117,6 +120,12 @@
   }
 }
 
+/* 
+  ----------------------------------
+  STYLES FOR THE CAREERS PAGE (HOME)
+  ----------------------------------
+*/
+
 /* Opening Section */
 
 .careers-page__opening-section {
@@ -124,9 +133,37 @@
   margin: 2rem 1rem;
 }
 
+.careers-page__opening-headline {
+  font-size: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.careers-page__opening-subheadline {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-forest-green);
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.careers-page__opening-text {
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .careers-page__opening-section {
     margin: 2rem 2rem;
+  }
+  .careers-page__opening-headline {
+    font-size: 175%;
+  }
+  .careers-page__opening-subheadline {
+    font-size: 1.2rem;
+  }
+  .careers-page__opening-text {
+    font-size: 1.2rem;
   }
 }
 
@@ -173,7 +210,8 @@
 }
 
 .careers-page__why-us-headline {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -182,7 +220,7 @@
 }
 
 .careers-page__why-us-bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .careers-page__why-us-list-item {
@@ -196,6 +234,12 @@
 @media screen and (min-width: 768px) {
   .careers-page__why-us-section {
     margin: 2rem 2rem;
+  }
+  .careers-page__why-us-headline {
+    font-size: 1.5rem;
+  }
+  .careers-page__why-us-list {
+    font-size: 1.15rem;
   }
 }
 
@@ -232,5 +276,118 @@
 @media screen and (min-width: 2000px) {
   .careers-page__why-us-section {
     margin: 2rem 16rem;
+  }
+}
+
+
+/* 
+  ----------------------------------
+  STYLES FOR THE CAREERS PAGE (OUR CULTURE)
+  ----------------------------------
+*/
+
+.careers-page__highlights-section {
+  font-size: 1rem;
+  margin: 2rem 1rem;
+}
+
+.careers-page__highlights-headline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.2rem;
+}
+
+.careers-page__highlights-subheadline {
+  font-size: 1rem;
+  text-align: left;
+  color: var(--color-forest-green);
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.careers-page__highlights-list {
+ font-size: 1rem;
+}
+
+.careers-page__highlights-list-item {
+  list-style: circle;
+}
+
+@media screen and (min-width: 768px) {
+  .careers-page__highlights-section {
+    margin: 2rem 2rem;
+  }
+  .careers-page__highlights-headline {
+    font-size: 1.5rem;
+  }
+  .careers-page__opening-subheadline {
+    font-size: 1.2rem;
+  }
+  .careers-page__highlights-list {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .careers-page__highlights-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .careers-page__highlights-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .careers-page__highlights-section {
+    margin: 2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .careers-page__highlights-section {
+    margin: 2rem 12rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .careers-page__highlights-section {
+    margin: 2rem 14rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .careers-page__highlights-section {
+    margin: 2rem 16rem;
+  }
+}
+
+
+/* 
+  ----------------------------------
+  STYLES FOR THE CAREERS PAGE (BENEFITS & PERKS)
+  ----------------------------------
+*/
+
+
+
+
+/* 
+  ----------------------------------
+  STYLES FOR THE CAREERS PAGE (APPLICATION PROCESS)
+  ----------------------------------
+*/
+
+.careers-page__applications-list-headline {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .careers-page__applications-list-headline {
+    font-size: 1.2rem;
   }
 }
