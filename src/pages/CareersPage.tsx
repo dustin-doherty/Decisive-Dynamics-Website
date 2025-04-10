@@ -4,10 +4,8 @@ import "../styles/careerspage.css";
 
 import CareersNavigation from "../components/careers/CareersNavigation";
 import CareersCulture from "../components/careers/CareersCulture";
-import CareersOpenings from "../components/careers/CareersOpenings";
 import CareersBenefits from "../components/careers/CareersBenefits";
 import CareersApplications from "../components/careers/CareersApplications";
-import CareersFAQ from "../components/careers/CareersFAQ";
 
 const CareersPage: React.FC = () => {
     const { section } = useParams<{ section?: string }>();
@@ -22,16 +20,24 @@ const CareersPage: React.FC = () => {
                         Join a team where your future is built with innovation.
                     </p>
                 </section>
+
                 {/* Careers Page Nav */}
                 <CareersNavigation />
+
                 {/* Opening Section */}
                 <section className='careers-page__opening-section'>
-                    <p>
-                        At Decisive Dynamics LLC, we are more than just an engineering and architectural consulting firm—we are a community 
-                        of innovators, problem-solvers, and forward-thinkers dedicated to shaping a sustainable future. Our commitment to 
-                        excellence drives us to seek individuals who are not only skilled but also passionate about making a meaningful impact.
+                    <h3 className='careers-page__opening-headline'>Shape Your Future at Decisive Dynamics</h3>
+                    <p className='careers-page__opening-subheadline'>
+                        At Decisive Dynamics, our people are our greatest asset. Join our growing team where your innovation, talent, and dedication drive the success of our clients and communities.
+                    </p>
+                    <p className='careers-page__opening-text'>
+                        Decisive Dynamics, LLC is committed to delivering innovative engineering and architectural solutions across Ohio. 
+                        We foster a collaborative, responsive, and inclusive environment that empowers our employees to grow professionally 
+                        and personally. Explore our culture, comprehensive benefits, and the application process, 
+                        and discover why Decisive Dynamics is an ideal place to build your career.
                     </p>
                 </section>
+
                 {/* Why Us Section */}
                 <section className='careers-page__why-us-section'>
                     <h3 className='careers-page__why-us-headline'>Why Join Us?</h3>
@@ -54,6 +60,19 @@ const CareersPage: React.FC = () => {
                         </li>
                     </ul>
                 </section>
+                
+                {/* Contact Section */}
+                <section className='contact-section__contact-section'>
+                    <h2 className='contact-section__contact-headline'>
+                        Interested in Joining Our Team?
+                    </h2>
+                    <p className='contact-section__contact-subheadline'>
+                        Reach out today to explore career opportunities with Decisive Dynamics.
+                    </p>
+                    <button className='contact-section__contact-button'>
+                        <Link to='/contact'>Contact</Link>
+                    </button>
+                </section>
             </>
         );
     }
@@ -63,10 +82,6 @@ const CareersPage: React.FC = () => {
             return (
                 <CareersCulture />
             );
-        case "openings":
-            return (
-                <CareersOpenings />
-            );
         case "benefits":
             return (
                 <CareersBenefits />
@@ -74,10 +89,6 @@ const CareersPage: React.FC = () => {
         case "applications":
             return (
                 <CareersApplications />
-            );
-        case "faq":
-            return (
-                <CareersFAQ />
             );
         default:
             return (

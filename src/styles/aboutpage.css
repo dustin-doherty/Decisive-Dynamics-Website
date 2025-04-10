@@ -47,6 +47,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
 }
 
 .about-page__nav-link {
