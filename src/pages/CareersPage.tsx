@@ -5,6 +5,7 @@ import "../styles/careerspage.css";
 import CareersNavigation from "../components/careers/CareersNavigation";
 import CareersCulture from "../components/careers/CareersCulture";
 import CareersBenefits from "../components/careers/CareersBenefits";
+import CareersOpenings from "../components/careers/CareersOpenings";
 import CareersApplications from "../components/careers/CareersApplications";
 
 const CareersPage: React.FC = () => {
@@ -85,6 +86,10 @@ const CareersPage: React.FC = () => {
         case "benefits":
             return (
                 <CareersBenefits />
+            );
+        case "openings":
+            return (
+                <CareersOpenings />
             );
         case "applications":
             return (

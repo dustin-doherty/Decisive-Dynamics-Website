@@ -373,7 +373,95 @@
 */
 
 
+/* 
+  ----------------------------------
+  STYLES FOR THE CAREERS PAGE (CURRENT OPENINGS)
+  ----------------------------------
+*/
 
+.careers-page__positions-section {
+  font-size: 1rem;
+  margin: 2rem 1rem;
+}
+
+.careers-page__positions-headline {
+  font-size: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.careers-page__positions-card {
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.careers-page__positions-card-title {
+  font-size: 150%;
+  margin-bottom: 0.5rem;
+}
+
+.careers-page__positions-card-experience {
+  font-size: 100%;
+}
+
+.careers-page__positions-card-type {
+
+}
+
+.careers-page__positions-card-description {
+
+}
+
+@media screen and (min-width: 768px) {
+  .careers-page__positions-section {
+    margin: 2rem 2rem;
+  }
+  .careers-page__positions-headline {
+    font-size: 175%;
+  }
+  .careers-page__opening-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .careers-page__positions-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .careers-page__positions-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .careers-page__positions-section {
+    margin: 2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .careers-page__positions-section {
+    margin: 2rem 12rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .careers-page__positions-section {
+    margin: 2rem 14rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .careers-page__positions-section {
+    margin: 2rem 16rem;
+  }
+}
 
 /* 
   ----------------------------------
