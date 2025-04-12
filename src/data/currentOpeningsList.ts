@@ -11,10 +11,9 @@ const currentOpeningsList: Opening[] = [
         experience: "1-5 years",
         type: "Full-Time",
         description: `
-            As a Project Engineer at Decisive Dynamics, you’ll contribute to a variety of civil engineering and infrastructure projects 
-            while building your technical and project management skills. You’ll work alongside experienced professionals in a collaborative, 
-            people-first environment where growth, innovation, and mentorship are at the core of our culture. This is an ideal opportunity 
-            for early-career engineers who are eager to develop their expertise and make a real impact on the communities we serve.
+            As a Project Engineer at Decisive Dynamics, you’ll support a variety of civil engineering and infrastructure projects 
+            while growing your technical and project management skills. This role is perfect for early-career engineers eager to 
+            learn, contribute meaningfully, and make a lasting impact in a collaborative, people-first environment.
         `,
     },
     {
@@ -22,11 +21,9 @@ const currentOpeningsList: Opening[] = [
         experience: "8–12 years",
         type: "Full-Time",
         description: `
-            We are seeking a seasoned Project Manager to lead complex engineering projects from concept through completion. 
-            This role is ideal for professionals who bring deep industry knowledge, proven leadership, and a proactive approach 
-            to client service. At Decisive Dynamics, Project Managers are trusted to shape outcomes, lead multidisciplinary teams, 
-            and build lasting relationships. If you thrive in a responsive, collaborative setting where you can mentor others and 
-            drive innovation, we’d love to hear from you.
+            We're seeking an experienced Project Manager to lead complex engineering projects from start to finish. 
+            You’ll guide multidisciplinary teams, build strong client relationships, and help shape project outcomes. 
+            This role is ideal for leaders who value mentorship, responsiveness, and making a lasting impact.
         `,
     },
 ];

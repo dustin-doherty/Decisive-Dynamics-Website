@@ -153,11 +153,12 @@
   color: var(--color-deep-teal);
   text-decoration: none;
   margin-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
   transition: all 0.3s ease-in;
 }
 
 .expertise-section__links a:hover {
-  border-bottom: 1px solid var(--text-gray);
+  border-bottom: 2px solid var(--color-deep-teal);
 }
 
 .expertise-section__links-col1 {
@@ -197,8 +198,6 @@
   }
   .expertise-section__links a {
     font-size: 125%;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
   }
 }
 

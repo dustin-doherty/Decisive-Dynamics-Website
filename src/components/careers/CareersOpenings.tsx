@@ -36,11 +36,21 @@ const CareersOpenings: React.FC = () =>  {
             {/* Positions Section */}
             <section className='careers-page__positions-section'>
                 <h3 className='careers-page__positions-headline'>Explore our Open Positions</h3>
-                {currentOpeningsList.map((opening, index) => (
-                    <div key={index}>
-                        <CurrentOpening opening={opening} />
-                    </div>
-                ))}
+                {currentOpeningsList.length > 0 ? (
+                    <div className="careers-page__positions-card-container">
+                    {currentOpeningsList.map((opening, index) => (
+                        <div key={index}>
+                            <CurrentOpening opening={opening} />
+                        </div>
+                    ))}
+                </div>
+                ) : (
+                    <p className="careers-page__positions-error">
+                        We’re not currently hiring, but we’re always interested in meeting talented people. 
+                        <br/>
+                        Feel free to reach out through our <Link to="/contact" className="careers-page__positions-error-link">Contact Page</Link> to introduce yourself.
+                    </p>
+                )}
             </section>
 
             {/* Contact Section */}

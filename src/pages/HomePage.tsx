@@ -141,14 +141,14 @@ const HomePage: React.FC = () => {
                         while mitigating risk.
                     </p>
                 </div>
-            {/* Desktop-only image placed on the right */}
-            <div className="service-section__image-container desktop-only">
-                <img 
-                src={amazingServiceImg} 
-                alt="Amazing Service Image" 
-                className="service-section__image"
-                />
-            </div>
+                {/* Desktop-only image placed on the right */}
+                <div className="service-section__image-container desktop-only">
+                    <img 
+                    src={amazingServiceImg} 
+                    alt="Amazing Service Image" 
+                    className="service-section__image"
+                    />
+                </div>
             </section>
 
             {/* Testimonials Section */}
