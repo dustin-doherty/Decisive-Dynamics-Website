@@ -6,6 +6,7 @@ import CareersNavigation from "./CareersNavigation";
 const CareersCulture: React.FC = () =>  {
     return (
         <>
+            {/* Careers Page Header */}
             <section className='careers-page__header'>
                 <h1 className='careers-page__headline'>Our Culture</h1>
                 <p className='careers-page__subtext'>

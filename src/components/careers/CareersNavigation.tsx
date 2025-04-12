@@ -30,6 +30,14 @@ const CareersNavigation: React.FC = () => {
                 >
                     Benefits & Perks
                 </NavLink>
+                <NavLink
+                    to="/careers/openings"
+                    className={({ isActive }) =>
+                        `careers-page__nav-link${isActive ? " careers-page__nav-link--active" : ""}`
+                    }
+                >
+                    Current Openings
+                </NavLink>
                 <NavLink 
                     to="/careers/applications"
                     className={({ isActive }) => 

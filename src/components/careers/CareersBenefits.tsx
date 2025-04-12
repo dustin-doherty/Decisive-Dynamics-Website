@@ -6,6 +6,7 @@ import CareersNavigation from "./CareersNavigation";
 const CareersBenefits: React.FC = () =>  {
     return (
         <>
+            {/* Careers Page Header */}
             <section className='careers-page__header'>
                 <h1 className='careers-page__headline'>Benefits and Perks</h1>
                 <p className='careers-page__subtext'>

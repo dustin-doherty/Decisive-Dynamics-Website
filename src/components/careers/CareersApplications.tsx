@@ -6,6 +6,7 @@ import CareersNavigation from "./CareersNavigation";
 const CareersApplications: React.FC = () =>  {
     return (
         <>
+            {/* Careers Page Header */}
             <section className='careers-page__header'>
                 <h1 className='careers-page__headline'>Applications</h1>
                 <p className='careers-page__subtext'>
@@ -23,9 +24,10 @@ const CareersApplications: React.FC = () =>  {
                     Let's Connect About Your Future
                 </p>
                 <p className='careers-page__opening-text'>
-                    Decisive Dynamics is always looking to connect with driven professionals who share our passion for excellence and innovation. 
-                    While we don't list specific openings directly on our site, we encourage you to reach out and start a conversation about your 
-                    career aspirations and how you can contribute to our growing team.
+                    Decisive Dynamics is growing, and we’re actively seeking talented professionals to join our team.
+                    Explore our current openings and discover opportunities that align with your skills and ambitions. 
+                    We value initiative and curiosity — if you don’t see a perfect match, we still welcome you to reach 
+                    out and start a conversation about how you can contribute to our shared success.
                 </p>
             </section>
 

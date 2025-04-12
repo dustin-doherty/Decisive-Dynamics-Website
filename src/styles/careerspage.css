@@ -373,7 +373,137 @@
 */
 
 
+/* 
+  ----------------------------------
+  STYLES FOR THE CAREERS PAGE (CURRENT OPENINGS)
+  ----------------------------------
+*/
 
+.careers-page__positions-section {
+  font-size: 1rem;
+  margin: 2rem 1rem;
+}
+
+.careers-page__positions-headline {
+  font-size: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.careers-page__positions-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.careers-page__positions-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.careers-page__positions-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.careers-page__positions-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--color-deep-teal);
+}
+
+.careers-page__positions-card-bold {
+  font-weight: 600;
+}
+
+.careers-page__positions-card-experience,
+.careers-page__positions-card-type,
+.careers-page__positions-card-description  {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.careers-page__positions-card-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.careers-page__positions-error {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.careers-page__positions-error-link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .careers-page__positions-section {
+    margin: 2rem 2rem;
+  }
+  .careers-page__positions-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .careers-page__positions-headline {
+    font-size: 175%;
+  }
+  .careers-page__positions-card-title {
+    font-size: 1.5rem;
+  }
+  .careers-page__positions-card-experience,
+  .careers-page__positions-card-type,
+  .careers-page__positions-card-description {
+    font-size: 1.05rem;
+  }
+  .careers-page__positions-error {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .careers-page__positions-section {
+    margin: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .careers-page__positions-section {
+    margin: 2rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .careers-page__positions-section {
+    margin: 2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .careers-page__positions-section {
+    margin: 2rem 12rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .careers-page__positions-section {
+    margin: 2rem 14rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .careers-page__positions-section {
+    margin: 2rem 16rem;
+  }
+}
 
 /* 
   ----------------------------------
