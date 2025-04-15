@@ -6,6 +6,7 @@ import CareersNavigation from "./CareersNavigation";
 const CareersApplications: React.FC = () =>  {
     return (
         <>
+            {/* Careers Page Header */}
             <section className='careers-page__header'>
                 <h1 className='careers-page__headline'>Applications</h1>
                 <p className='careers-page__subtext'>
@@ -23,24 +24,51 @@ const CareersApplications: React.FC = () =>  {
                     Let's Connect About Your Future
                 </p>
                 <p className='careers-page__opening-text'>
-                    Decisive Dynamics is always looking to connect with driven professionals who share our passion for excellence and innovation. 
-                    While we don't list specific openings directly on our site, we encourage you to reach out and start a conversation about your 
-                    career aspirations and how you can contribute to our growing team.
+                    Decisive Dynamics is growing, and we’re actively seeking talented professionals to join our team.
+                    Explore our current openings and discover opportunities that align with your skills and ambitions. 
+                    We value initiative and curiosity — if you don’t see a perfect match, we still welcome you to reach 
+                    out and start a conversation about how you can contribute to our shared success.
                 </p>
             </section>
 
             {/* Applications Section */}
-            <section className='careers-page__highlights-section'>
-                <h3 className="careers-page__highlights-headline">Interested in joining us?</h3>
-                <p className="careers-page__highlights-subheadline">
-                    Please visit our Contact page and share a little about yourself, including your professional background and interests.
+            <section className='careers-page__applications-section'>
+                <h3 className="careers-page__applications-headline">Interested in joining us?</h3>
+                <p className="careers-page__applications-subheadline">
+                    We’re excited to learn more about you. 
                 </p>
-                <p className="careers-page__applications-list-headline">After reaching out, you can expect:</p>
-                <ul className="careers-page__highlights-list">
-                    <li className="careers-page__highlights-list-item">A quick initial follow-up to learn more about your skills and interests.</li>
-                    <li className="careers-page__highlights-list-item">A personalized conversation with one of our team members to discuss potential roles and opportunities.</li>
-                    <li className="careers-page__highlights-list-item">Regular communication throughout the process to ensure transparency and clarity.</li>
-                </ul>
+                <p className="careers-page__applications-text">
+                    To start your application, visit our <Link to="/contact" className="careers-page__link">Contact Page</Link> to find our email address. 
+                    Please send a brief introduction, your professional background, and the type of role you’re interested in. We recommend attaching a resume or portfolio if available.
+                </p>
+                <p className="careers-page__applications-list-heading">Once we receive your message, here’s what to expect:</p>
+                <ol className="careers-page__applications-list">
+                    <li className="careers-page__applications-list-item">
+                        Our team reviews your email and responds with a follow-up to better understand your interests and availability.
+                    </li>
+                    <li className="careers-page__applications-list-item">
+                        We schedule a personalized conversation to explore potential opportunities and ensure alignment on values and goals.
+                    </li>
+                    <li className="careers-page__applications-list-item">
+                        You’ll receive timely updates throughout the process as we move forward.
+                    </li>
+                </ol>
+            </section>
+
+            {/* What to Expect Section */}
+            <section className='careers-page__what-to-expect-section'>
+                <h3 className="careers-page__what-to-expect-headline">What You Can Expect From Us</h3>
+                <p className="careers-page__opening-text">
+                    We’re committed to creating a respectful and responsive hiring experience. You’ll be treated as a valued professional from the first conversation — whether you’re exploring a role today or connecting for a future opportunity.
+                </p>
+            </section>
+
+            {/* Next Steps Section */}
+            <section className='careers-page__applications-section'>
+                <h3 className="careers-page__what-to-expect-headline">Next Steps</h3>
+                <p className="careers-page__applications-text">
+                    Curious about current roles or what it’s like to work here? <Link to="/careers/openings" className="careers-page__link">View our openings</Link> or learn more <Link to="/careers/culture" className="careers-page__link">about our culture</Link>.
+                </p>
             </section>
 
             {/* Contact Section */}
