@@ -53,6 +53,22 @@ const CareersOpenings: React.FC = () =>  {
                 )}
             </section>
 
+            {/* How to Apply Section */}
+            <section className='careers-page__how-to-apply-section'>
+                <h3 className='careers-page__how-to-apply-headline'>Ready to Apply?</h3>
+                <p className='careers-page__how-to-apply-text'>
+                    If you're interested in one of our open positions, we invite you to reach out and introduce yourself.
+                    Please visit our <Link to="/contact" className="careers-page__link">Contact Page</Link> to access our email address and other contact information.
+                </p>
+                <p className='careers-page__how-to-apply-text'>
+                    We recommend including your resume, the position you're interested in, and a brief introduction. 
+                    We look forward to hearing from you!
+                </p>
+                <p className='careers-page__how-to-apply-text'>
+                    For more details about the hiring process, visit our <Link to="/careers/applications" className="careers-page__link">Application Process</Link> page.
+                </p>
+            </section>
+
             {/* Contact Section */}
             <section className='contact-section__contact-section'>
                 <h2 className='contact-section__contact-headline'>
