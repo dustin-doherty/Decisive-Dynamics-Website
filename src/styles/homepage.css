@@ -203,6 +203,7 @@
 
 @media screen and (min-width: 1024px) {
   .expertise-section__text {
+    font-size: 130%;
     max-width: 80%;
   }
 }
@@ -287,7 +288,7 @@
     font-size: 225%;
   }
   .service-section__text1, .service-section__text2 {
-    font-size: 115%;
+    font-size: 120%;
   }
 }
 
@@ -316,7 +317,7 @@
     font-size: 250%;
   }
   .service-section__text1, .service-section__text2 {
-    font-size: 120%;
+    font-size: 130%;
   }
 }
 
@@ -324,17 +325,11 @@
   .service-section__headline {
     font-size: 275%;
   }
-  .service-section__text1, .service-section__text2 {
-    font-size: 125%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .service-section__headline {
     font-size: 300%;
-  }
-  .service-section__text1, .service-section__text2 {
-    font-size: 130%;
   }
 }
 
@@ -424,6 +419,9 @@
   .testimonials-section__subheadline {
     font-size: 125%;
   }
+  .testimonials-section__description {
+    font-size: 120%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -443,7 +441,7 @@
     margin-bottom: 0;
   }
   .testimonials-section__description {
-    font-size: 115%;
+    font-size: 130%;
   }
 }
 

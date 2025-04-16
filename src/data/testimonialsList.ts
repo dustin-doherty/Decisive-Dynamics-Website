@@ -12,7 +12,7 @@ const testimonials: Testimonial[] = [
         education: "MBA",
         position: "Construction Manager",
         company: "United States Navy (retired)",
-        description: "Dustin delt with everyone using his outstanding management and creative design skills saving the client time and money, especially when he thinks out of the box"
+        description: "Dustin dealt with everyone using his outstanding management and creative design skills saving the client time and money, especially when he thinks out of the box"
     },
     {
         name: "Mark Setterlin",

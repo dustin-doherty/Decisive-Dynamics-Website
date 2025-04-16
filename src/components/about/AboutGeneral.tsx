@@ -18,7 +18,10 @@ const AboutGeneral: React.FC = () => {
                     engineering and construction industry.
                 </p>
             </section>
+
+            {/* About Us Page Nav */}
             <AboutNavigation />
+
             {/* Introduction Section */}
             <section className='about-page__intro-section'>
                 <div className='about-page__intro-main-container'>
@@ -52,41 +55,7 @@ const AboutGeneral: React.FC = () => {
                     />
                 </div>
             </section>
-            {/* Firm History Section */}
-            <section className='about-page__history-section'>
-                <div className='about-page__history-main-container'>
-                    <h2 className='about-page__history-headline'>Firm History</h2>
-                    <div className='about-page__history-text-container'>
-                        <p className='about-page__history-text'>
-                            Decisive Dynamics, LLC was founded in 2024 with a clear vision 
-                            of providing innovative engineering and architectural consulting 
-                            services that emphasize quality, responsiveness, and client 
-                            satisfaction. Headquartered in Ohio, the firm quickly established 
-                            itself as a trusted partner by leveraging the extensive expertise 
-                            of its leadership team, who bring decades of experience in project 
-                            management, civil engineering, and infrastructure development. 
-                            This expertise has enabled Decisive Dynamics to deliver sustainable, 
-                            high-quality solutions tailored to diverse public and private sector needs.
-                        </p>
-                        <p className='about-page__history-text'>
-                            The firm's core specialties include roadway reconstruction, stormwater management, 
-                            utility infrastructure, and ADA-compliant multiuse paths and recreational facilities. 
-                            Decisive Dynamics is distinguished by a collaborative and client-centric approach, 
-                            prioritizing meaningful partnerships, responsiveness, and meticulous project execution. 
-                            Through proactive problem-solving, innovation, and a strong commitment to accountability 
-                            and excellence, the company consistently achieves exceptional outcomes, positively 
-                            impacting community infrastructure and development across Ohio.
-                        </p>
-                    </div>
-                </div>
-                <div className='about-page__history-image-container'>
-                    <img 
-                        src={historyImg}
-                        alt='Firm History Image'
-                        className='about-page__history-image'
-                    />
-                </div>
-            </section>
+
             {/* Leadership Section */}
             <section className='about-page__leadership-section'>
                 <div className='about-page__leadership-main-container'>
@@ -122,6 +91,43 @@ const AboutGeneral: React.FC = () => {
                     />
                 </div>
             </section>
+
+            {/* Firm History Section */}
+            <section className='about-page__history-section'>
+                <div className='about-page__history-main-container'>
+                    <h2 className='about-page__history-headline'>Firm History</h2>
+                    <div className='about-page__history-text-container'>
+                        <p className='about-page__history-text'>
+                            Decisive Dynamics, LLC was founded in 2024 with a clear vision 
+                            of providing innovative engineering and architectural consulting 
+                            services that emphasize quality, responsiveness, and client 
+                            satisfaction. Headquartered in Ohio, the firm quickly established 
+                            itself as a trusted partner by leveraging the extensive expertise 
+                            of its leadership team, who bring decades of experience in project 
+                            management, civil engineering, and infrastructure development. 
+                            This expertise has enabled Decisive Dynamics to deliver sustainable, 
+                            high-quality solutions tailored to diverse public and private sector needs.
+                        </p>
+                        <p className='about-page__history-text'>
+                            The firm's core specialties include roadway reconstruction, stormwater management, 
+                            utility infrastructure, and ADA-compliant multiuse paths and recreational facilities. 
+                            Decisive Dynamics is distinguished by a collaborative and client-centric approach, 
+                            prioritizing meaningful partnerships, responsiveness, and meticulous project execution. 
+                            Through proactive problem-solving, innovation, and a strong commitment to accountability 
+                            and excellence, the company consistently achieves exceptional outcomes, positively 
+                            impacting community infrastructure and development across Ohio.
+                        </p>
+                    </div>
+                </div>
+                <div className='about-page__history-image-container'>
+                    <img 
+                        src={historyImg}
+                        alt='Firm History Image'
+                        className='about-page__history-image'
+                    />
+                </div>
+            </section>
+            
             {/* Contact Section */}
             <ContactSection />
         </>
