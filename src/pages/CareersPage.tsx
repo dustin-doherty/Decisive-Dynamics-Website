@@ -81,7 +81,8 @@ const CareersPage: React.FC = () => {
                 <section className='careers-page__spotlight-section'>
                     <h3 className='careers-page__spotlight-headline'>Our Leadership Philosophy</h3>
                     <blockquote className='careers-page__spotlight-quote'>
-                        “Insert quote from Dustin.”  
+                        “Great leadership isn’t about hierarchy—it’s about creating space for others to lead, contribute, and grow. 
+                        At Decisive Dynamics, we lead by listening, we support by empowering, and we measure success by the success of our people.”  
                     </blockquote>
                     <p className='careers-page__spotlight-name'>— Dustin Doherty, Owner and CEO</p>
                 </section>
