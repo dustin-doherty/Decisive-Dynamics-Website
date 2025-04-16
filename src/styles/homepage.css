@@ -243,13 +243,13 @@
 }
 
 .service-section__text1 {
-  font-size: 1rem;
+  font-size: 110%;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .service-section__text2 {
-  font-size: 1rem;
+  font-size: 110%;
   line-height: 1.6;
 }
 
@@ -317,7 +317,7 @@
     font-size: 250%;
   }
   .service-section__text1, .service-section__text2 {
-    font-size: 130%;
+    font-size: 140%;
   }
 }
 
@@ -398,10 +398,12 @@
 
 .testimonial-card__position, 
 .testimonial-card__company {
+  font-size: 100%;
   color: var(--text-gray);
 }
 
 .testimonial-card__description {
+  font-size: 115%;
   font-weight: 200;
   margin-bottom: 0.5rem;
 }
@@ -409,6 +411,16 @@
 @media screen and (min-width: 568px) {
   .testimonials-section__main-content {
     margin: 0rem 5%;
+  }
+  .testimonial-card__name {
+    font-size: 130%;
+  }
+  .testimonial-card__position, 
+  .testimonial-card__company {
+    font-size: 105%;
+  }
+  .testimonial-card__description {
+    font-size: 120%;
   }
 }
 
@@ -421,6 +433,16 @@
   }
   .testimonials-section__description {
     font-size: 120%;
+  }
+  .testimonial-card__name {
+    font-size: 140%;
+  }
+  .testimonial-card__position, 
+  .testimonial-card__company {
+    font-size: 110%;
+  }
+  .testimonial-card__description {
+    font-size: 125%;
   }
 }
 
@@ -443,11 +465,24 @@
   .testimonials-section__description {
     font-size: 130%;
   }
+  .testimonial-card__name {
+    font-size: 145%;
+  }
+  .testimonial-card__position, 
+  .testimonial-card__company {
+    font-size: 115%;
+  }
+  .testimonial-card__description {
+    font-size: 130%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .testimonials-section {
     margin: 0rem 10%;
+  }
+  .testimonial-card__description {
+    font-size: 135%;
   }
 }
 
