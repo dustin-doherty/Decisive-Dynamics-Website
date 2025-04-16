@@ -3,7 +3,7 @@ import React from "react";
 import "../../styles/contactsection.css";
 
 import AboutNavigation from "../../components/about/AboutNavigation";
-import CoreValueCard from "../../components/CoreValueCard";
+import CoreValueCard from "./CoreValueCard";
 import coreValueList from "../../data/coreValuesList";
 import ContactSection from "../ContactSection";
 

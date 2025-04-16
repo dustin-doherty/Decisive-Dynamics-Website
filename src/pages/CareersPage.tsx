@@ -73,7 +73,7 @@ const CareersPage: React.FC = () => {
                     <p className='careers-page__life-text'>
                         We believe that great work starts with great people. Our supportive leadership, transparent communication, and 
                         emphasis on work-life balance create a culture where passion and performance go hand-in-hand. From team lunches 
-                        to community service events, we foster meaningful connections inside and outside the workplace.
+                        to community events, we foster meaningful connections inside and outside the workplace.
                     </p>
                 </section>
 
@@ -81,8 +81,8 @@ const CareersPage: React.FC = () => {
                 <section className='careers-page__spotlight-section'>
                     <h3 className='careers-page__spotlight-headline'>Our Leadership Philosophy</h3>
                     <blockquote className='careers-page__spotlight-quote'>
-                        “There’s something powerful about working for a firm where your ideas are heard and your work directly contributes to 
-                        community improvement. That’s why I love being part of the Decisive Dynamics team.”  
+                        “Great leadership isn’t about hierarchy—it’s about creating space for others to lead, contribute, and grow. 
+                        At Decisive Dynamics, we lead by listening, we support by empowering, and we measure success by the success of our people.”  
                     </blockquote>
                     <p className='careers-page__spotlight-name'>— Dustin Doherty, Owner and CEO</p>
                 </section>
