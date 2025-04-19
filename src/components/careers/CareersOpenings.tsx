@@ -57,8 +57,11 @@ const CareersOpenings: React.FC = () =>  {
             <section className='careers-page__how-to-apply-section'>
                 <h3 className='careers-page__how-to-apply-headline'>Ready to Apply?</h3>
                 <p className='careers-page__how-to-apply-text'>
-                    If you're interested in one of our open positions, we invite you to reach out and introduce yourself.
-                    Please visit our <Link to="/contact" className="careers-page__link">Contact Page</Link> to access our email address and other contact information.
+                    If you’re interested in one of our open positions, we invite you to introduce yourself.  
+                    To begin your application, please email your resume, the title of the position you’re applying for, and a brief introduction to&nbsp;
+                    <a href="mailto:info@decisivedynamics.com" className="careers-page__link">
+                        info@decisivedynamics.com
+                    </a>.
                 </p>
                 <p className='careers-page__how-to-apply-text'>
                     We recommend including your resume, the position you're interested in, and a brief introduction. 

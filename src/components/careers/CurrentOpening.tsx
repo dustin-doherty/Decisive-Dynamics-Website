@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom"
 import { Opening } from '../../data/currentOpeningsList';
 
 interface CurrentOpeningProps {
@@ -7,6 +6,7 @@ interface CurrentOpeningProps {
 }
 
 const CurrentOpening: React.FC<CurrentOpeningProps> = ({ opening }) => {
+    const subject = encodeURIComponent(`Application for ${opening.title}`);
     return (
         <div className="careers-page__positions-card">
             <h3 className="careers-page__positions-card-title">{opening.title}</h3>
@@ -21,7 +21,12 @@ const CurrentOpening: React.FC<CurrentOpeningProps> = ({ opening }) => {
             </p>
             <div className='careers-page__positions-card-button-container'>
                 <button className='contact-section__contact-button'>
-                    <Link to='/contact'>Apply Now</Link>
+                    <a
+                        href={`mailto:info@decisivedynamics.com?subject=${subject}`}
+                        style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                        Apply Now
+                    </a>
                 </button>
             </div>
         </div>

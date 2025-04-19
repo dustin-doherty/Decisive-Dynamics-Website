@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick = () => {} }) => {
                         Decisive Dynamics
                     </NavLink>
                     <div className="footer-contact">
-                        <p>(614) 439-5529</p>
+                        <p>(614) 359-6321</p>
                         <p>dustin.doherty@decisivedynamics.com</p>
                     </div>
                 </div>
@@ -56,6 +56,18 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick = () => {} }) => {
                         ))}
                     </ul>
                 </nav>
+                <div className="footer-social">
+                    <i 
+                        className="bi bi-linkedin"
+                        onClick={() => window.open("https://www.linkedin.com/company/decisive-dynamics-llc", "_blank")}
+                        style={{ cursor: "pointer" }}
+                    />
+                    <i 
+                        className="bi bi-instagram"
+                        onClick={() => window.open("https://www.instagram.com/decisivedynamics?igsh=eTEyejhmaG41eDJv", "_blank")}
+                        style={{ cursor: "pointer" }}
+                    />
+                </div>
             </div>
             <div className="footer-bottom">
                 <p>&copy; 2025 Decisive Dynamics LLC. All rights reserved.</p>
