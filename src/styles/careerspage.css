@@ -505,14 +505,6 @@
   }
 }
 
-
-/* 
-  ----------------------------------
-  STYLES FOR THE CAREERS PAGE (BENEFITS & PERKS)
-  ----------------------------------
-*/
-
-
 /* 
   ----------------------------------
   STYLES FOR THE CAREERS PAGE (CURRENT OPENINGS)
@@ -667,13 +659,13 @@
 
 .careers-page__link {
   text-decoration: none;
-  color: var(--color-deep-teal);
+  color: #53A2BE;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-in;
 }
 
 .careers-page__link:hover {
-  border-bottom: 2px solid var(--color-deep-teal);
+  border-bottom: 2px solid #53A2BE;
 }
 
 @media screen and (min-width: 768px) {

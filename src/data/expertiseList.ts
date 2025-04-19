@@ -7,6 +7,7 @@ import dueDiligenceImg from "../assets/images/expertise/dueDiligence.webp";
 import planningImg from "../assets/images/expertise/planning.webp";
 import transportationEngineeringImg from "../assets/images/expertise/transportationEngineering.webp";
 import constructionServicesImg from "../assets/images/expertise/constructionServices.webp";
+import justiceDesign from "../assets/images/expertise/justiceDesign.webp";
 
 export interface Expertise {
     id: string;
@@ -159,6 +160,22 @@ const expertiseList: Expertise[] = [
             `Implementation of advanced scheduling and cost-estimating practices to maintain on-budget and on-time project delivery.`,
         ],
         image: constructionServicesImg,
+    },
+    {
+        id: "justice-design",
+        title: "Justice Design",
+        paragraphs: [
+            `Decisive Dynamics provides comprehensive engineering and site development services for correctional and justice facilities. Our team understands the unique design standards, regulatory requirements, and security considerations associated with detention and judicial infrastructure. From utility and access planning to drainage and site layout, we deliver solutions that balance security, durability, and operational efficiency.`,
+            `We work closely with architects, public agencies, and correctional staff to ensure each facility meets both functional and regulatory standards. Whether it's a county jail, a state correctional center, or a courthouse, our team brings the technical insight and coordination expertise required to support complex justice projects from concept through construction.`
+        ],
+        bullets: [
+            `Site layout planning that prioritizes controlled access, clear circulation patterns, and perimeter security.`,
+            `Design of utility infrastructure with built-in redundancy to support secure and continuous facility operations.`,
+            `Coordination with correctional architects and agencies to meet local, state, and federal design standards.`,
+            `Stormwater management systems designed to mitigate runoff in secure and highly paved environments.`,
+            `Support for phased construction and facility expansion planning to accommodate long-term capacity needs.`,
+        ],
+        image: justiceDesign,
     },
 ];
 

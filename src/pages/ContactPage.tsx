@@ -41,33 +41,57 @@ const ContactPage: React.FC = () => {
                         className="contact-page__main-image"
                     />
                 </div>
-                <div className="contact-page__info-container">
-                    <div className="contact-page__info-item">
-                        <i 
-                            className="bi bi-pin-map"
-                            onClick={() => handleCopy("255 Silver Branch Drive, Delaware, Ohio 43015")}
-                            style={{ cursor: "pointer" }}
-                        />
-                        <div className="contact-page__info-text">
-                            <p>255 Silver Branch Drive</p>
-                            <p>Delaware, Ohio 43015</p>
+                <div className="contact-page__details-wrapper">
+                    <div className="contact-page__info-container">
+                        {/* Info Container */}
+                        <div className="contact-page__info-item">
+                            <i 
+                                className="bi bi-pin-map"
+                                onClick={() => handleCopy("255 Silver Branch Drive, Delaware, Ohio 43015")}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <div className="contact-page__info-text">
+                                <p>255 Silver Branch Drive</p>
+                                <p>Delaware, Ohio 43015</p>
+                            </div>
+                        </div>
+                        <div className="contact-page__info-item">
+                            <i 
+                                className="bi bi-telephone"
+                                onClick={() => handleCopy("(614) 359-6321")}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <p>(614) 359-6321</p>
+                        </div>
+                        <div className="contact-page__info-item">
+                            <i 
+                                className="bi bi-envelope"
+                                onClick={() => handleCopy("dustin.doherty@decisivedynamics.com")}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <p>info@decisivedynamics.com</p>
                         </div>
                     </div>
-                    <div className="contact-page__info-item">
-                        <i 
-                            className="bi bi-telephone"
-                            onClick={() => handleCopy("(614) 359-6321")}
-                            style={{ cursor: "pointer" }}
-                        />
-                        <p>(614) 359-6321</p>
-                    </div>
-                    <div className="contact-page__info-item">
-                        <i 
-                            className="bi bi-envelope"
-                            onClick={() => handleCopy("dustin.doherty@decisivedynamics.com")}
-                            style={{ cursor: "pointer" }}
-                        />
-                        <p>dustin.doherty@decisivedynamics.com</p>
+                    {/* Social Container */}
+                    <div className="contact-page__social-container">
+                        <div className="contact-page__social-item">
+                            <i 
+                                className="bi bi-linkedin"
+                                onClick={() => window.open("https://www.linkedin.com/company/decisive-dynamics-llc", "_blank")}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <div>
+                                <p>Decisive Dynamics LLC</p>
+                            </div>
+                        </div>
+                        <div className="contact-page__social-item">
+                            <i 
+                                className="bi bi-instagram"
+                                onClick={() => window.open("https://www.instagram.com/decisivedynamics?igsh=eTEyejhmaG41eDJv", "_blank")}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <p>decisivedynamics</p>
+                        </div>
                     </div>
                 </div>
             </section>
