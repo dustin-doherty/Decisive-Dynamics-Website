@@ -107,6 +107,7 @@ const HomePage: React.FC = () => {
                         <Link to="/expertise/planning">Planning</Link>
                         <Link to="/expertise/transportation-engineering">Transportation Engineering</Link>
                         <Link to="/expertise/construction-services">Construction Services</Link>
+                        <Link to="/expertise/justice-design">Justice Services</Link>
                     </div>
                 </div>
             </section>
